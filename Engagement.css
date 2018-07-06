@@ -1,0 +1,150 @@
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Pinyon Script', cursive; */
+
+body{
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    background: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    width: 70%;
+    margin: auto;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style-type: none;
+    text-align: center;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.register{
+    border: 2px solid #6b00b3;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color:gray;
+}
+
+.register:hover{
+    background: lightgray;
+    color: purple;
+}
+/* .register{
+    font-size: 14px;
+    padding-top: 20px;
+} */
+
+.nav-items{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+.nav-items:hover{
+    color:#a64dff;
+}
+
+.rsvp-banner{
+    text-align: center;
+    background-image: url("rsvpbackgroundbanner.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 300px;
+
+}
+
+.rsvp-button{
+    padding: 15px 50px;
+    color: white;
+    background: #7a00cc;
+    border: 2px #7a00cc solid;
+    margin-top: 40px;
+}
+
+.rsvp-button:hover{
+    background: #6b00b3;
+    border: 2px #6b00b3 solid;
+}
+
+.cursive{
+    font-family: 'Pinyon Script', cursive;
+}
+.rsvp-banner h2{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+}
+
+.footer-social{
+    padding-top: 10px;
+}
+
+.footer-social a{
+    padding-left: 10px;
+}
+
+
+.story-banner,
+.bigday-banner,
+.bridesmaids-banner,
+.gettingthere-banner{
+    background: #e6ffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* CSS for Story Page */
+.content{
+    width: 60%;
+    margin: auto;
+    line-height: 2;
+}
+
+.left{
+    float: left;
+    width: 50%;
+}
+
+.right{
+    float: right;
+    width: 50%;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
