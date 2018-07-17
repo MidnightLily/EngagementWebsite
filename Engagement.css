@@ -70,15 +70,23 @@ header{
 
 }
 
-.rsvp-button{
+.rsvp-button,
+.register-now,
+.view-map{
     padding: 15px 50px;
     color: white;
     background: #7a00cc;
     border: 2px #7a00cc solid;
+}
+
+.rsvp-button,
+.register-now{
     margin-top: 40px;
 }
 
-.rsvp-button:hover{
+.rsvp-button:hover,
+.register-now:hover,
+.view-map:hover{
     background: #6b00b3;
     border: 2px #6b00b3 solid;
 }
@@ -89,6 +97,28 @@ header{
 .rsvp-banner h2{
     font-size: 70px;
     text-transform: uppercase;
+}
+
+.story-banner h1,
+.bigday-banner h1,
+.gettingthere-banner h1,
+.bridesmaids-banner h1,
+.groomsmen-banner h1{
+    color: gray;
+}
+
+.flower-img{
+    transform: rotate(10deg);
+}
+
+.weddinghands{
+    background-image: url("weddingrings.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
 }
 
 footer{
@@ -121,12 +151,42 @@ footer{
 .gettingthere-banner{
     background: #e6ffff;
     text-align: center;
+}
+
+.groomsmen-banner{
+    background: white;
+    text-align: center;
+}
+
+.story-banner,
+.gettingthere-banner{
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.bigday-banner{
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.bridesmaids-banner,
+.groomsmen-banner{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.where{
+    margin-top: 90px;
+}
+
+.when,
+.where{
+    font-size: 14px;
+    color: gray;
+}
+
 /* CSS for Story Page */
-.content{
+/* .content{
     width: 60%;
     margin: auto;
     line-height: 2;
@@ -134,15 +194,117 @@ footer{
 
 .left{
     float: left;
-    width: 50%;
+    width: 30%;
 }
 
 .right{
     float: right;
-    width: 50%;
+    width: 30%;
+} */
+
+.content{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.left{
+    width: 40%;
+    padding: 10px;
+    font-size: 18px;
+    color: gray;
+    line-height: 2;
+}
+
+.right{
+    width: 40%;
+    padding: 10px;
+    font-size: 18px;
+    color: gray;
+    line-height: 2;
+}
+
+.left img,
+.right img{
+    width: 100%;
+}
+
+/* CSS for EngagementWeddingParty */
+
+.bridesmaids-container,
+.groomsmen-container{
+    width: 70%;
+    margin: auto;
+}
+
+.bridesmaids-section,
+.groomsmen-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 70px;
 }
 
 
+.bridesmaids,
+.groomsmen{
+    padding: 10px;
+    color: gray;
+}
+
+.bridesmaids img,
+.groomsmen img{
+    width: 100%;
+}
+
+/* CSS for EngagementDetails Page */
+.accomodation,
+.transportation{
+    width: 35%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.gettingthere-banner{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.registry{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+    line-height: 1.8;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+
+.registry-banner{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.registry-images{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+
+     
+}
+.registry-images img{
+    height: 40px;
+   
+}
+
+.registry-images img{
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .clearfix::after {
     content: "";
     clear: both;
