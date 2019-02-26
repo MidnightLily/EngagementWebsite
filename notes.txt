@@ -1,0 +1,11 @@
+Red hex code:
+#DB1B1B;
+
+Maroon hex code:
+#A41504;
+
+Off-white color: 
+#FCFBEF;
+
+Darker off white color:
+#FAF8DF;
