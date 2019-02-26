@@ -58,7 +58,7 @@ header{
 
 .rsvp-banner{
     text-align: center;
-    background-image: url("rsvpbackgroundbanner.jpg");
+    background-image: url("images/rsvpbackgroundbanner.jpg");
     height: 1000px;
     background-attachment: fixed;
     background-position: center;
@@ -112,7 +112,7 @@ header{
 }
 
 .weddinghands{
-    background-image: url("weddingrings.jpg");
+    background-image: url("images/weddingrings.jpg");
     height: 600px;
     background-attachment: fixed;
     background-position: center;
