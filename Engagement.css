@@ -312,3 +312,53 @@ footer{
     clear: both;
     display: table;
 }
+
+/* Media Queries */
+
+@media(max-width: 750px){
+     .content{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 950px){
+    .navbar ul{
+        flex-direction: column;
+    }
+
+    .registry-images{
+        flex-direction: column;
+    }
+
+    .registry-images img{
+        padding: 20px;
+    }
+
+    .footer-end{
+       flex-direction: column;
+    }
+
+    .footer-end p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-social{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-social a{
+        padding-left: 0px;
+    }
+}
