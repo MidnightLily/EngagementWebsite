@@ -124,10 +124,14 @@ header{
 }
 
 footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: black;
     color: white;
+}
+
+footer p{
+    margin: 0;
 }
 
 .footer-end{
@@ -139,11 +143,14 @@ footer{
 }
 
 .footer-social{
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .footer-social a{
     padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 
