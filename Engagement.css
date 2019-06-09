@@ -1,9 +1,11 @@
 /* font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Pinyon Script', cursive; */
 
+/* font-family: 'Vidaloka', serif;
+font-family: 'Raleway', sans-serif; */
+
 html{
     height: 100%;
-   
 }
 
 
@@ -11,7 +13,7 @@ body{
     margin: 0 auto;
     position: relative;
     min-height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 header{
     background: #f2f2f2;
@@ -60,7 +62,8 @@ header{
 .nav-items{
     text-decoration: none;
     color: gray;
-    font-size: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .nav-items:hover{
     color:#a64dff;
@@ -98,7 +101,7 @@ header{
 }
 
 .cursive{
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Vidaloka', cursive;
 }
 .rsvp-banner h2{
     font-size: 70px;
