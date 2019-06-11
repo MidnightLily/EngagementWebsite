@@ -77,9 +77,9 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    height: 70vh;
+    height: 100%;
     color: black;
-    padding-top: 100px;
+
 }
 
 .rsvp-button,
@@ -106,6 +106,10 @@ header{
 .cursive{
     font-family: 'Vidaloka', cursive;
 }
+
+.rsvp-banner h1{
+    margin: 0;
+}
 .rsvp-banner h2{
     font-size: 70px;
     text-transform: uppercase;
@@ -131,10 +135,6 @@ header{
 }
 
 footer{
-    position: sticky;
-    right: 0;
-    bottom: 0;
-    left: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
