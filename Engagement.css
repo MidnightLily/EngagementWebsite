@@ -16,7 +16,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 header{
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -71,14 +71,17 @@ header{
 
 .rsvp-banner{
     text-align: center;
-    /* background-image: url("images/rsvpbackgroundbanner.jpg"); */
-    background: #e6ffff;
-    /* background-attachment: fixed;
+    background-image: url("images/white roses.png");
+    /* background: #e6ffff;
+    Parallax Effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    height: 100%;
-    color: black;
+    background-size: cover;
+    height: calc(100vh-100px);
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 
