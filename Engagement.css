@@ -42,16 +42,16 @@ header{
 }
 
 .register{
-    border: 2px solid #6b00b3;
-    font-size: 14px;
+
     padding: 10px 30px;
     text-decoration: none;
     font-size: 14px;
     color:gray;
+    text-transform: uppercase;
 }
 
 .register:hover{
-    background: lightgray;
+
     color: purple;
 }
 /* .register{
@@ -77,9 +77,9 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
+    height: 70vh;
     color: black;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .rsvp-button,
@@ -114,14 +114,6 @@ header{
 
 .rsvp-banner h3{
     font-family: 'Vidaloka', sans-serif;
-}
-
-.story-banner h1,
-.bigday-banner h1,
-.gettingthere-banner h1,
-.bridesmaids-banner h1,
-.groomsmen-banner h1{
-    color: gray;
 }
 
 .flower-img{
@@ -164,9 +156,6 @@ footer p{
     margin: auto;
 }
 
-.footer-social{
-    /* padding-top: 10px; */
-}
 
 .footer-social a{
     padding-left: 10px;
@@ -213,25 +202,9 @@ footer p{
 .when,
 .where{
     font-size: 14px;
-    color: gray;
 }
 
 /* CSS for Story Page */
-/* .content{
-    width: 60%;
-    margin: auto;
-    line-height: 2;
-}
-
-.left{
-    float: left;
-    width: 30%;
-}
-
-.right{
-    float: right;
-    width: 30%;
-} */
 
 .content{
     display: flex;
@@ -244,7 +217,6 @@ footer p{
     width: 40%;
     padding: 10px;
     font-size: 18px;
-    color: gray;
     line-height: 2;
 }
 
@@ -252,7 +224,6 @@ footer p{
     width: 40%;
     padding: 10px;
     font-size: 18px;
-    color: gray;
     line-height: 2;
 }
 
@@ -280,7 +251,7 @@ footer p{
 .bridesmaids,
 .groomsmen{
     padding: 10px;
-    color: gray;
+   
 }
 
 .bridesmaids img,
@@ -295,7 +266,6 @@ footer p{
     margin: auto;
     font-size: 16px;
     line-height: 1.8;
-    color: gray;
     margin-bottom: 50px;
 }
 
@@ -308,7 +278,6 @@ footer p{
     width: 35%;
     margin: auto;
     text-align: center;
-    color: gray;
     line-height: 1.8;
     font-size: 16px;
     padding-bottom: 60px;
