@@ -71,13 +71,14 @@ header{
 
 .rsvp-banner{
     text-align: center;
-    background-image: url("images/white roses.png");
+  
     /* background: #e6ffff;
     Parallax Effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("images/white-roses.png");
     height: calc(100vh-100px);
     color: white;
     padding-top: 200px;
