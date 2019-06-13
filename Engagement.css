@@ -19,6 +19,7 @@ header{
     /* background: #f2f2f2; */
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
 }
 .navbar{
     width: 90%;
@@ -71,9 +72,6 @@ header{
 
 .rsvp-banner{
     text-align: center;
-  
-    /* background: #e6ffff;
-    Parallax Effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,6 +171,7 @@ footer p{
 .bigday-banner,
 .bridesmaids-banner,
 .gettingthere-banner{
+    width: 100%;
     background: #e6ffff;
     text-align: center;
 }
@@ -233,6 +232,53 @@ footer p{
 
 .left img,
 .right img{
+    width: 100%;
+}
+
+.story-content{
+    background: #e6ffff;
+}
+
+.story-content h1{
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 40px;
+    color: #424238;
+}
+
+.story-content h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #6F6F6A;
+}
+
+.story-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.story-col div{
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.story-col p{
+    color: #6F6F6A;
+}
+
+.story-col img{
     width: 100%;
 }
 
@@ -334,6 +380,7 @@ footer p{
 }
 
 @media(max-width: 950px){
+    
     .navbar ul{
         flex-direction: column;
     }
@@ -362,5 +409,14 @@ footer p{
 
     .footer-social a{
         padding-left: 0px;
+    }
+
+   .story-col{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
     }
 }
