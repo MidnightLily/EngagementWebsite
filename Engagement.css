@@ -91,6 +91,7 @@ header{
     color: white;
     background: #7a00cc;
     border: 2px #7a00cc solid;
+    font-size: 14px;
 }
 
 .rsvp-button,
@@ -205,6 +206,7 @@ footer p{
 .when,
 .where{
     font-size: 14px;
+    color: #6F6F6A;
 }
 
 /* CSS for Story Page */
@@ -282,26 +284,32 @@ footer p{
     width: 100%;
 }
 
+/* CSS for Engagement Wedding Page */
+
+.bigday-banner h1{
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 40px;
+    color: #424238;
+}
+
+
 /* CSS for EngagementWeddingParty */
 
 .bridesmaids-container,
 .groomsmen-container{
     width: 70%;
     margin: auto;
+    max-width: 1000px;
 }
 
 .bridesmaids-section,
 .groomsmen-section{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-gap: 70px;
-}
-
-
-.bridesmaids,
-.groomsmen{
-    padding: 10px;
-   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
 }
 
 .bridesmaids img,
@@ -309,14 +317,57 @@ footer p{
     width: 100%;
 }
 
+
+.bridesmaids-banner h1,
+.groomsmen-banner h1{
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 40px;
+    color: #424238;
+}
+
+
+.bridesmaids-banner h3,
+.groomsmen-banner h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+
+.bridesmaids,
+.groomsmen{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #6F6F6A;
+
+}
+
+
+
 /* CSS for EngagementDetails Page */
 .accomodation,
 .transportation{
-    width: 35%;
+    width: 50%;
     margin: auto;
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 50px;
+    color: #6F6F6A;
+}
+
+.accomodation h3,
+.transportation h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
 
 .gettingthere-banner{
@@ -331,6 +382,26 @@ footer p{
     line-height: 1.8;
     font-size: 16px;
     padding-bottom: 60px;
+    color: #6F6F6A;
+}
+
+.registry h2{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 30px;
+    color: #424238;
+}
+
+
+.bridesmaids,
+.groomsmen{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #6F6F6A;
+
 }
 
 .registry-banner{
@@ -363,26 +434,11 @@ footer p{
 
 /* Media Queries */
 
-@media(max-width: 750px){
-     .content{
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .left{
-        width: 100%;
-    }
-
-    .right{
-        width: 100%;
-    }
-
-}
-
 @media(max-width: 950px){
     
     .navbar ul{
         flex-direction: column;
+        padding: 0;
     }
 
     .registry-images{
@@ -412,11 +468,61 @@ footer p{
     }
 
    .story-col{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        max-width: 960px;
+        margin: auto;
+        padding: 20px;
     }
+
+    .bridesmaids-container,
+    .groomsmen-container{
+        width: 70%;
+        margin: auto;
+    }
+
+    .bridesmaids-section,
+    .groomsmen-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+@media(max-width: 750px){
+     .content{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .bridesmaids-container,
+    .groomsmen-container{
+        width: 70%;
+        margin: auto;
+    }
+
+    .bridesmaids-section,
+    .groomsmen-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .accomodation,
+    .transportation{
+        width: 80%;
+    }
+
+    .registry{
+        width: 65%;
+    }
+
 }
