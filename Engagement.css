@@ -43,8 +43,6 @@ header{
 }
 
 .register{
-
-    padding: 10px 30px;
     text-decoration: none;
     font-size: 14px;
     color:gray;
@@ -76,7 +74,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("images/white-roses.png");
+    background-image: url("images/white-roses.jpg");
     height: calc(100vh-100px);
     color: white;
     padding-top: 200px;
@@ -426,10 +424,100 @@ footer p{
     padding-left: 40px;
     padding-right: 40px;
 }
+
+/* Register Now Page */
+
+.register-now-content{
+    height: 100vh;
+    background: #e6ffff;
+}
+
+.register-now-grid{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    max-width: 1000px;
+}
+.register-now-content h1{
+    margin: 0;
+    font-family: 'Vidaloka', sans-serif;
+
+}
+
+.register-now-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.register-now-form input{
+    border: 1px solid lightgrey;
+    background: #e6ffff;
+    padding: 10px 5px;
+    font-size: 16px;
+
+}
+
+.register-now-form input:focus{
+    border: 1px solid black;
+    background: #e6ffff;
+}
+
+.grid-two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: column; 
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.register-now-address{
+    background: #755b86;
+    width: 250px;
+    height: 125px;
+    color: rgb(244, 239, 248);
+    text-align: left;
+    padding: 20px 15px;
+    box-shadow: 2px 2px 4px rgb(88, 87, 87);
+}
+
+.register-now-address span{
+    font-size: 24px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.register-now-address p{
+    margin: 0;
+}
+
+.submit{
+    padding-top: 15px;
+}
+
+.submit button{
+    padding: 15px 0;
+    background: #755b86;
+    color: white;
+    text-transform: uppercase;
+}
+
+.submit button:hover{
+    background: hsla(276, 19%, 44%, 0.8);
+}
+
+.chapel{
+    padding: 40px 0;
+    color: rgb(231, 221, 240);
 }
 
 /* Media Queries */
@@ -488,6 +576,7 @@ footer p{
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
     }
+
 }
 
 @media(max-width: 750px){
@@ -525,4 +614,19 @@ footer p{
         width: 65%;
     }
 
+    .register-now-grid{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .register-now-address{
+        display: none;
+    }
+
+    .grid-two-col{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
+
