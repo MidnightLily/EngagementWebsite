@@ -172,78 +172,7 @@ footer p {
   font-size: 16px;
 }
 
-.story-banner,
-.bigday-banner,
-.bridesmaids-banner,
-.gettingthere-banner {
-  width: 100%;
-  background: #e6ffff;
-  text-align: center;
-}
-
-.groomsmen-banner {
-  background: white;
-  text-align: center;
-}
-
-.story-banner,
-.gettingthere-banner {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.bigday-banner {
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
-
-.bridesmaids-banner,
-.groomsmen-banner {
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-.where {
-  margin-top: 90px;
-}
-
-.when,
-.where {
-  font-size: 14px;
-  color: #6F6F6A;
-}
-
 /* CSS for Story Page */
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-}
-
-.left {
-  width: 40%;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.right {
-  width: 40%;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 2;
-}
-
-.left img,
-.right img {
-  width: 100%;
-}
-
 .story-content {
   background: #e6ffff;
 }
@@ -293,6 +222,14 @@ footer p {
 }
 
 /* CSS for Engagement Wedding Page */
+.bigday-banner {
+  width: 100%;
+  background: #e6ffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
 .bigday-banner h1 {
   padding: 30px;
   margin: 0;
@@ -302,30 +239,29 @@ footer p {
   color: #424238;
 }
 
+.where {
+  margin-top: 90px;
+}
+
+.when,
+.where {
+  font-size: 14px;
+  color: #6F6F6A;
+}
+
 /* CSS for EngagementWeddingParty */
-.bridesmaids-container,
-.groomsmen-container {
-  width: 70%;
-  margin: auto;
-  max-width: 1000px;
-}
-
-.bridesmaids-section,
-.groomsmen-section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
-}
-
-.bridesmaids img,
-.groomsmen img {
+.bridesmaids-banner,
+.groomsmen-banner {
   width: 100%;
+  background: #e6ffff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .bridesmaids-banner h1,
 .groomsmen-banner h1 {
+  font-family: "Vidaloka", sans-serif;
   padding: 30px;
   margin: 0;
   text-align: center;
@@ -343,6 +279,26 @@ footer p {
   letter-spacing: 4px;
 }
 
+.groomsmen-banner {
+  background: white;
+}
+
+.bridesmaids-container,
+.groomsmen-container {
+  width: 70%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.bridesmaids-section,
+.groomsmen-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
 .bridesmaids,
 .groomsmen {
   font-size: 16px;
@@ -351,7 +307,23 @@ footer p {
   color: #6F6F6A;
 }
 
+.bridesmaids img,
+.groomsmen img {
+  width: 100%;
+}
+
 /* CSS for EngagementDetails Page */
+.gettingthere-banner {
+  width: 100%;
+  background: #e6ffff;
+  text-align: center;
+}
+
+.gettingthere-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .accomodation,
 .transportation {
   width: 50%;

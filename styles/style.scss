@@ -157,36 +157,91 @@ footer{
     font-size: 16px;
 }
 
+/* CSS for Story Page */
 
-.story-banner,
-.bigday-banner,
-.bridesmaids-banner,
-.gettingthere-banner{
-    width: 100%;
+// .content{
+//     display: flex;
+//     width: 60%;
+//     justify-content: space-between;
+//     margin: auto;
+
+// }
+// .left{
+//     width: 40%;
+//     padding: 10px;
+//     font-size: 18px;
+//     line-height: 2;
+// }
+
+// .right{
+//     width: 40%;
+//     padding: 10px;
+//     font-size: 18px;
+//     line-height: 2;
+// }
+
+// .left img,
+// .right img{
+//     width: 100%;
+// }
+
+.story-content{
     background: $light-blue;
-    text-align: center;
+    h1{
+      padding: 30px;
+      margin: 0;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 40px;
+      color: $black;
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: $dark-gray;
+    }
 }
 
-.groomsmen-banner{
-    background: white;
-    text-align: center;
+.story-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    div{
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    p{
+      color: $dark-gray;
+    }
+    img{
+      width: 100%;
+    }
 }
 
-.story-banner,
-.gettingthere-banner{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+/* CSS for Engagement Wedding Page */
 
 .bigday-banner{
-    padding-top: 20px;
-    padding-bottom: 100px;
-}
-
-.bridesmaids-banner,
-.groomsmen-banner{
-    padding-top: 50px;
-    padding-bottom: 100px;
+  width: 100%;
+  background: $light-blue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  h1{
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: $header-font;
+    font-size: 40px;
+    color: $black;
+  }
 }
 
 .where{
@@ -199,94 +254,37 @@ footer{
     color: $dark-gray;
 }
 
-/* CSS for Story Page */
-
-.content{
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-    margin: auto;
-
-}
-.left{
-    width: 40%;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 2;
-}
-
-.right{
-    width: 40%;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 2;
-}
-
-.left img,
-.right img{
-    width: 100%;
-}
-
-.story-content{
-    background: $light-blue;
-}
-
-.story-content h1{
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    font-family: $header-font;
-    font-size: 40px;
-    color: $black;
-}
-
-.story-content h3{
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    color: $dark-gray;
-}
-
-.story-col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 150px;
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-}
-
-
-.story-col div{
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.story-col p{
-    color: $dark-gray;
-}
-
-.story-col img{
-    width: 100%;
-}
-
-/* CSS for Engagement Wedding Page */
-
-.bigday-banner h1{
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    font-family: $header-font;
-    font-size: 40px;
-    color: $black;
-}
-
 
 /* CSS for EngagementWeddingParty */
+
+.bridesmaids-banner,
+.groomsmen-banner{
+    width: 100%;
+    background: $light-blue;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    h1{
+      font-family: $header-font;
+      padding: 30px;
+      margin: 0;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 40px;
+      color: $black;
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+}
+
+.groomsmen-banner{
+    background: white;
+}
 
 .bridesmaids-container,
 .groomsmen-container{
@@ -302,45 +300,33 @@ footer{
     grid-gap: 50px;
 }
 
-.bridesmaids img,
-.groomsmen img{
-    width: 100%;
-}
-
-
-.bridesmaids-banner h1,
-.groomsmen-banner h1{
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    font-family: $header-font;
-    font-size: 40px;
-    color: $black;
-}
-
-
-.bridesmaids-banner h3,
-.groomsmen-banner h3{
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    letter-spacing: 4px;
-}
-
-
 .bridesmaids,
 .groomsmen{
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: $dark-gray;
+    img{
+      width: 100%;
+    }
 
 }
 
 
 
 /* CSS for EngagementDetails Page */
+
+.gettingthere-banner{
+    width: 100%;
+    background: $light-blue;
+    text-align: center;
+}
+
+.gettingthere-banner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .accomodation,
 .transportation{
     width: 50%;
