@@ -4,6 +4,12 @@ header {
   border-bottom: 1px solid #f2f2f2;
 }
 
+.hamburger-icon {
+  display: none;
+  color: gray;
+  font-size: 20px;
+}
+
 .navbar {
   width: 90%;
   margin: auto;
@@ -43,6 +49,10 @@ header {
 
 .navbar ul .nav-items:hover {
   color: #a64dff;
+}
+
+.mobile {
+  display: none;
 }
 
 footer {
@@ -426,16 +436,14 @@ body {
 
 .rsvp-banner h1 {
   margin: 0;
-  font-family: "Vidaloka", sans-serif;
 }
 
 .rsvp-banner h2 {
   font-size: 70px;
   text-transform: uppercase;
-  font-family: "Vidaloka", sans-serif;
 }
 
-.rsvp-banner h3 {
+.rsvp-banner h1, .rsvp-banner h2, .rsvp-banner h3 {
   font-family: "Vidaloka", sans-serif;
 }
 
@@ -474,12 +482,41 @@ body {
 
 /* Media Queries */
 @media (max-width: 950px) {
-  .navbar ul {
+  .hamburger-icon {
+    display: inline;
+    padding: 5px 0;
+  }
+  .mobile {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .mobile ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile li {
+    margin: 10px;
+  }
+  .mobile .nav-items {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .mobile .nav-items:hover {
+    color: #a64dff;
+  }
+  .navbar {
+    display: none;
   }
   .registry-images {
     -webkit-box-orient: vertical;

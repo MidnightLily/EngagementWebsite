@@ -4,6 +4,12 @@ header{
     border-bottom: 1px solid $white-border;
 }
 
+.hamburger-icon{
+  display: none;
+  color: gray;
+  font-size: 20px;
+}
+
 .navbar{
     width: 90%;
     margin: auto;
@@ -29,4 +35,8 @@ header{
         color:$link-hover;
       }
   }
+}
+
+.mobile{
+  display: none;
 }

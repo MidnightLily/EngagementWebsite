@@ -38,14 +38,12 @@ body{
     padding-bottom: 200px;
     h1{
       margin: 0;
-      font-family: $header-font;
     }
     h2{
       font-size: 70px;
       text-transform: uppercase;
-      font-family: $header-font;
     }
-    h3{
+    h1, h2, h3{
       font-family: $header-font;
     }
     button{
@@ -86,10 +84,38 @@ body{
 /* Media Queries */
 
 @media(max-width: 950px){
-    
-    .navbar ul{
-        flex-direction: column;
-        padding: 0;
+    .hamburger-icon{
+        display: inline;
+        padding: 5px 0;
+        
+    }
+
+    .mobile{
+        display: block;
+        width: 90%;
+        margin: auto;
+        ul{
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            margin: 10px;
+        }
+        .nav-items{
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .nav-items:hover{
+            color:$link-hover;
+        }
+    }
+    .navbar{
+        display: none;
     }
 
     .registry-images{
