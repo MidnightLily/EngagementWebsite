@@ -1,17 +1,28 @@
-$white-border: #f2f2f2;
-$link-hover: #a64dff;
-$purple: #7a00cc;
-$dark-purple: #6b00b3;
-$light-blue: #e6ffff;
-$black: #424238;
-$dark-gray: #6F6F6A;
-$header-font: 'Vidaloka', sans-serif;
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'storypage';
+@import 'engagementwedding';
+@import 'engagementweddingparty';
+@import 'engagementdetails';
+@import 'registernow';
 
-html{
-    height: 100%;
+%large-button-style{
+  padding: 15px 50px;
+  color: white;
+  background: $purple;
+  border: 2px $purple solid;
+  font-size: 14px;
 }
 
-
+@mixin backgroundimg($attachment, $position, $repeat, $size, $url, $height){
+    background-attachment: $attachment;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-image: url($url);
+    height: $height;
+}
 body{
     margin: 0 auto;
     position: relative;
@@ -19,47 +30,9 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-header{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $white-border;
-}
-
-.navbar{
-    width: 90%;
-    margin: auto;
-    ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0;
-      li{
-        list-style-type: none;
-        text-align: center;
-        flex-grow: 1;
-        margin: 10px;
-      }
-      .nav-items{
-        text-decoration: none;
-        color: gray;
-        font-size: 14px;
-        text-transform: uppercase;
-      }
-      .nav-items:hover{
-        color:$link-hover;
-      }
-  }
-}
-
 .rsvp-banner{
+    @include backgroundimg(fixed, center, no-repeat, cover, "../images/white-roses.jpg", 100vh);
     text-align: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/white-roses.jpg");
-    height: calc(100vh-100px);
     color: white;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -76,11 +49,7 @@ header{
       font-family: $header-font;
     }
     button{
-      padding: 15px 50px;
-      color: white;
-      background: $purple;
-      border: 2px $purple solid;
-      font-size: 14px;
+     @extend %large-button-style;
       margin-top: 40px;
     }
     button:hover{
@@ -92,11 +61,7 @@ header{
 
 .register-now,
 .view-map{
-    padding: 15px 50px;
-    color: white;
-    background: $purple;
-    border: 2px $purple solid;
-    font-size: 14px;
+    @extend %large-button-style;
 }
 
 
@@ -110,328 +75,12 @@ header{
     border: 2px $dark-purple solid;
 }
 
-.cursive{
-    font-family: $header-font;
-}
-
 .flower-img{
     transform: rotate(10deg);
 }
 
 .weddinghands{
-    background-image: url("../images/weddingrings.jpg");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 10px;
-}
-
-footer{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
-    color: white;
-    p {
-      margin: 0;
-      font-size: 14px;
-      padding: 0;
-      text-align: center;
-    }
-}
-
-.footer-end{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 65%;
-    margin: auto;
-}
-
-
-.footer-social a{
-    padding-left: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* CSS for Story Page */
-
-.story-content{
-    background: $light-blue;
-    h1{
-      padding: 30px;
-      margin: 0;
-      text-align: center;
-      font-family: $header-font;
-      font-size: 40px;
-      color: $black;
-    }
-    h3{
-      text-transform: uppercase;
-      font-size: 20px;
-      letter-spacing: 1px;
-      font-weight: 400;
-      letter-spacing: 4px;
-      color: $dark-gray;
-    }
-}
-
-.story-col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 150px;
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-    div{
-      padding: 10px;
-      font-size: 16px;
-      line-height: 1.5;
-      text-align: center;
-    }
-    p{
-      color: $dark-gray;
-    }
-    img{
-      width: 100%;
-    }
-}
-
-/* CSS for Engagement Wedding Page */
-
-.bigday-banner{
-  width: 100%;
-  background: $light-blue;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  h1{
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-    font-family: $header-font;
-    font-size: 40px;
-    color: $black;
-  }
-}
-
-.where{
-    margin-top: 90px;
-}
-
-.when,
-.where{
-    font-size: 14px;
-    color: $dark-gray;
-}
-
-
-/* CSS for EngagementWeddingParty */
-
-.bridesmaids-banner,
-.groomsmen-banner{
-    width: 100%;
-    background: $light-blue;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    h1{
-      font-family: $header-font;
-      padding: 30px;
-      margin: 0;
-      text-align: center;
-      font-family: $header-font;
-      font-size: 40px;
-      color: $black;
-    }
-    h3{
-      text-transform: uppercase;
-      font-size: 16px;
-      letter-spacing: 1px;
-      font-weight: 400;
-      letter-spacing: 4px;
-    }
-}
-
-.groomsmen-banner{
-    background: white;
-}
-
-.bridesmaids-container,
-.groomsmen-container{
-    width: 70%;
-    margin: auto;
-    max-width: 1000px;
-}
-
-.bridesmaids-section,
-.groomsmen-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
-}
-
-.bridesmaids,
-.groomsmen{
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: $dark-gray;
-    img{
-      width: 100%;
-    }
-}
-
-
-/* CSS for EngagementDetails Page */
-
-.gettingthere-banner{
-    width: 100%;
-    background: $light-blue;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    h1 {
-      font-family: $header-font;
-    }
-}
-
-.accomodation,
-.transportation{
-    width: 50%;
-    margin: auto;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 50px;
-    color: $dark-gray;
-    h3{
-      text-transform: uppercase;
-      font-size: 20px;
-      letter-spacing: 1px;
-      font-weight: 400;
-      letter-spacing: 4px;
-    }
-}
-
-.registry-banner{
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-
-.registry{
-    width: 35%;
-    margin: auto;
-    text-align: center;
-    line-height: 1.8;
-    font-size: 16px;
-    padding-bottom: 60px;
-    color: $dark-gray;
-    h2{
-      padding: 10px;
-      margin: 0;
-      text-align: center;
-      font-family: $header-font;
-      font-size: 30px;
-      color: $black;
-    }
-}
-
-.registry-images{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: nowrap;
-   img{
-     height: 40px;
-     padding-left: 40px;
-     padding-right: 40px;
-   }
-     
-}
-
-/* Register Now Page */
-
-.register-now-content{
-    height: 100vh;
-    background: $light-blue;
-    h1{
-      margin: 0;
-      font-family: $header-font;
-    }
-}
-
-.register-now-grid{
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.register-now-form{
-    width: 70%;
-    margin: 0 auto;
-    input {
-      border: 1px solid lightgrey;
-      background: $light-blue;
-      padding: 10px 5px;
-      font-size: 16px;
-    }
-    input:focus{
-      border: 1px solid black;
-      background: $light-blue;
-    }
-}
-
-.grid-two-col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px 0;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: column; 
-}
-
-.register-now-address{
-    background: #755b86;
-    width: 250px;
-    height: 125px;
-    color: rgb(244, 239, 248);
-    text-align: left;
-    padding: 20px 15px;
-    box-shadow: 2px 2px 4px rgb(88, 87, 87);
-    span{
-      font-size: 24px;
-      padding: 10px 0;
-      text-transform: uppercase;
-    }
-    p{
-      margin: 0;
-    }
-}
-
-.submit{
-    padding-top: 15px;
-    button{
-      padding: 15px 0;
-      background: #755b86;
-      color: white;
-      text-transform: uppercase;
-    }
-    button:hover{
-      background: hsla(276, 19%, 44%, 0.8);
-    }
-}
-
-.chapel{
-    padding: 40px 0;
-    color: rgb(231, 221, 240);
+    @include backgroundimg(fixed, center, no-repeat, cover, "../images/weddingrings.jpg", 600px);
 }
 
 /* Media Queries */

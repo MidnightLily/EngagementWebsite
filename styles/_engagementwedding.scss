@@ -1,0 +1,27 @@
+/* CSS for Engagement Wedding Page */
+
+.bigday-banner{
+  width: 100%;
+  background: $light-blue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  h1{
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    font-family: $header-font;
+    font-size: 40px;
+    color: $black;
+  }
+}
+
+.where{
+    margin-top: 90px;
+}
+
+.when,
+.where{
+    font-size: 14px;
+    color: $dark-gray;
+}

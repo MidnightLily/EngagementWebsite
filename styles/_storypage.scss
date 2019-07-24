@@ -1,0 +1,42 @@
+/* CSS for Story Page */
+
+.story-content{
+    background: $light-blue;
+    h1{
+      padding: 30px;
+      margin: 0;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 40px;
+      color: $black;
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: $dark-gray;
+    }
+}
+
+.story-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    div{
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    p{
+      color: $dark-gray;
+    }
+    img{
+      width: 100%;
+    }
+}

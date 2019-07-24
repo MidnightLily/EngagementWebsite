@@ -1,14 +1,3 @@
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0 auto;
-  position: relative;
-  min-height: 100%;
-  font-family: 'Raleway', sans-serif;
-}
-
 header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -54,86 +43,6 @@ header {
 
 .navbar ul .nav-items:hover {
   color: #a64dff;
-}
-
-.rsvp-banner {
-  text-align: center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../images/white-roses.jpg");
-  height: calc(100vh-100px);
-  color: white;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.rsvp-banner h1 {
-  margin: 0;
-  font-family: "Vidaloka", sans-serif;
-}
-
-.rsvp-banner h2 {
-  font-size: 70px;
-  text-transform: uppercase;
-  font-family: "Vidaloka", sans-serif;
-}
-
-.rsvp-banner h3 {
-  font-family: "Vidaloka", sans-serif;
-}
-
-.rsvp-banner button {
-  padding: 15px 50px;
-  color: white;
-  background: #7a00cc;
-  border: 2px #7a00cc solid;
-  font-size: 14px;
-  margin-top: 40px;
-}
-
-.rsvp-banner button:hover {
-  background: #6b00b3;
-  border: 2px #6b00b3 solid;
-}
-
-.register-now,
-.view-map {
-  padding: 15px 50px;
-  color: white;
-  background: #7a00cc;
-  border: 2px #7a00cc solid;
-  font-size: 14px;
-}
-
-.register-now {
-  margin-top: 40px;
-}
-
-.register-now:hover,
-.view-map:hover {
-  background: #6b00b3;
-  border: 2px #6b00b3 solid;
-}
-
-.cursive {
-  font-family: "Vidaloka", sans-serif;
-}
-
-.flower-img {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-
-.weddinghands {
-  background-image: url("../images/weddingrings.jpg");
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 10px;
 }
 
 footer {
@@ -484,6 +393,83 @@ footer p {
 .chapel {
   padding: 40px 0;
   color: #e7ddf0;
+}
+
+.rsvp-banner button, .register-now,
+.view-map {
+  padding: 15px 50px;
+  color: white;
+  background: #7a00cc;
+  border: 2px #7a00cc solid;
+  font-size: 14px;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.rsvp-banner {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/white-roses.jpg");
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.rsvp-banner h1 {
+  margin: 0;
+  font-family: "Vidaloka", sans-serif;
+}
+
+.rsvp-banner h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Vidaloka", sans-serif;
+}
+
+.rsvp-banner h3 {
+  font-family: "Vidaloka", sans-serif;
+}
+
+.rsvp-banner button {
+  margin-top: 40px;
+}
+
+.rsvp-banner button:hover {
+  background: #6b00b3;
+  border: 2px #6b00b3 solid;
+}
+
+.register-now {
+  margin-top: 40px;
+}
+
+.register-now:hover,
+.view-map:hover {
+  background: #6b00b3;
+  border: 2px #6b00b3 solid;
+}
+
+.flower-img {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.weddinghands {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/weddingrings.jpg");
+  height: 600px;
 }
 
 /* Media Queries */

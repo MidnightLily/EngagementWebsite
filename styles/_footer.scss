@@ -1,0 +1,28 @@
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    p {
+      margin: 0;
+      font-size: 14px;
+      padding: 0;
+      text-align: center;
+    }
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+}
+
+
+.footer-social a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}

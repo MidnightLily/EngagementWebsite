@@ -1,0 +1,81 @@
+/* Register Now Page */
+
+.register-now-content{
+    height: 100vh;
+    background: $light-blue;
+    h1{
+      margin: 0;
+      font-family: $header-font;
+    }
+}
+
+.register-now-grid{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.register-now-form{
+    width: 70%;
+    margin: 0 auto;
+    input {
+      border: 1px solid lightgrey;
+      background: $light-blue;
+      padding: 10px 5px;
+      font-size: 16px;
+    }
+    input:focus{
+      border: 1px solid black;
+      background: $light-blue;
+    }
+}
+
+.grid-two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 20px 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: column; 
+}
+
+.register-now-address{
+    background: #755b86;
+    width: 250px;
+    height: 125px;
+    color: rgb(244, 239, 248);
+    text-align: left;
+    padding: 20px 15px;
+    box-shadow: 2px 2px 4px rgb(88, 87, 87);
+    span{
+      font-size: 24px;
+      padding: 10px 0;
+      text-transform: uppercase;
+    }
+    p{
+      margin: 0;
+    }
+}
+
+.submit{
+    padding-top: 15px;
+    button{
+      padding: 15px 0;
+      background: #755b86;
+      color: white;
+      text-transform: uppercase;
+    }
+    button:hover{
+      background: hsla(276, 19%, 44%, 0.8);
+    }
+}
+
+.chapel{
+    padding: 40px 0;
+    color: rgb(231, 221, 240);
+}

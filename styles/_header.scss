@@ -1,0 +1,32 @@
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $white-border;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      li{
+        list-style-type: none;
+        text-align: center;
+        flex-grow: 1;
+        margin: 10px;
+      }
+      .nav-items{
+        text-decoration: none;
+        color: gray;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .nav-items:hover{
+        color:$link-hover;
+      }
+  }
+}

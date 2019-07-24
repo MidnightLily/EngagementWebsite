@@ -1,0 +1,55 @@
+/* CSS for EngagementWeddingParty */
+
+.bridesmaids-banner,
+.groomsmen-banner{
+    width: 100%;
+    background: $light-blue;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    h1{
+      font-family: $header-font;
+      padding: 30px;
+      margin: 0;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 40px;
+      color: $black;
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+}
+
+.groomsmen-banner{
+    background: white;
+}
+
+.bridesmaids-container,
+.groomsmen-container{
+    width: 70%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.bridesmaids-section,
+.groomsmen-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.bridesmaids,
+.groomsmen{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: $dark-gray;
+    img{
+      width: 100%;
+    }
+}
