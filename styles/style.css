@@ -317,11 +317,12 @@ footer p {
   width: 100%;
   background: #e6ffff;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.gettingthere-banner {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.gettingthere-banner h1 {
+  font-family: "Vidaloka", sans-serif;
 }
 
 .accomodation,
@@ -343,9 +344,9 @@ footer p {
   letter-spacing: 4px;
 }
 
-.gettingthere-banner {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.registry-banner {
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .registry {
@@ -367,19 +368,6 @@ footer p {
   color: #424238;
 }
 
-.bridesmaids,
-.groomsmen {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #6F6F6A;
-}
-
-.registry-banner {
-  padding-top: 50px;
-  padding-bottom: 150px;
-}
-
 .registry-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,9 +384,6 @@ footer p {
 
 .registry-images img {
   height: 40px;
-}
-
-.registry-images img {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -409,6 +394,11 @@ footer p {
   background: #e6ffff;
 }
 
+.register-now-content h1 {
+  margin: 0;
+  font-family: "Vidaloka", sans-serif;
+}
+
 .register-now-grid {
   padding-top: 40px;
   display: -ms-grid;
@@ -416,11 +406,7 @@ footer p {
   -ms-grid-columns: 1fr 300px;
       grid-template-columns: 1fr 300px;
   max-width: 1000px;
-}
-
-.register-now-content h1 {
-  margin: 0;
-  font-family: "Vidaloka", sans-serif;
+  margin: 0 auto;
 }
 
 .register-now-form {
@@ -457,12 +443,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .register-now-address {
@@ -571,19 +551,6 @@ footer p {
 }
 
 @media (max-width: 750px) {
-  .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 80%;
-  }
-  .left {
-    width: 100%;
-  }
-  .right {
-    width: 100%;
-  }
   .bridesmaids-container,
   .groomsmen-container {
     width: 70%;

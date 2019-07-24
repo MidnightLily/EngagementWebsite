@@ -159,32 +159,6 @@ footer{
 
 /* CSS for Story Page */
 
-// .content{
-//     display: flex;
-//     width: 60%;
-//     justify-content: space-between;
-//     margin: auto;
-
-// }
-// .left{
-//     width: 40%;
-//     padding: 10px;
-//     font-size: 18px;
-//     line-height: 2;
-// }
-
-// .right{
-//     width: 40%;
-//     padding: 10px;
-//     font-size: 18px;
-//     line-height: 2;
-// }
-
-// .left img,
-// .right img{
-//     width: 100%;
-// }
-
 .story-content{
     background: $light-blue;
     h1{
@@ -309,9 +283,7 @@ footer{
     img{
       width: 100%;
     }
-
 }
-
 
 
 /* CSS for EngagementDetails Page */
@@ -320,11 +292,11 @@ footer{
     width: 100%;
     background: $light-blue;
     text-align: center;
-}
-
-.gettingthere-banner{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h1 {
+      font-family: $header-font;
+    }
 }
 
 .accomodation,
@@ -335,20 +307,18 @@ footer{
     line-height: 1.8;
     margin-bottom: 50px;
     color: $dark-gray;
+    h3{
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
 }
 
-.accomodation h3,
-.transportation h3{
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    letter-spacing: 4px;
-}
-
-.gettingthere-banner{
-    padding-top: 100px;
-    padding-bottom: 100px;
+.registry-banner{
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 .registry{
@@ -359,30 +329,14 @@ footer{
     font-size: 16px;
     padding-bottom: 60px;
     color: $dark-gray;
-}
-
-.registry h2{
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    font-family: $header-font;
-    font-size: 30px;
-    color: $black;
-}
-
-
-.bridesmaids,
-.groomsmen{
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: $dark-gray;
-
-}
-
-.registry-banner{
-    padding-top: 50px;
-    padding-bottom: 150px;
+    h2{
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+      font-family: $header-font;
+      font-size: 30px;
+      color: $black;
+    }
 }
 
 .registry-images{
@@ -390,17 +344,12 @@ footer{
    justify-content: center;
    align-items: center;
    flex-wrap: nowrap;
-
+   img{
+     height: 40px;
+     padding-left: 40px;
+     padding-right: 40px;
+   }
      
-}
-.registry-images img{
-    height: 40px;
-   
-}
-
-.registry-images img{
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 /* Register Now Page */
@@ -408,6 +357,10 @@ footer{
 .register-now-content{
     height: 100vh;
     background: $light-blue;
+    h1{
+      margin: 0;
+      font-family: $header-font;
+    }
 }
 
 .register-now-grid{
@@ -415,29 +368,22 @@ footer{
     display: grid;
     grid-template-columns: 1fr 300px;
     max-width: 1000px;
-}
-.register-now-content h1{
-    margin: 0;
-    font-family: $header-font;
-
+    margin: 0 auto;
 }
 
 .register-now-form{
     width: 70%;
     margin: 0 auto;
-}
-
-.register-now-form input{
-    border: 1px solid lightgrey;
-    background: $light-blue;
-    padding: 10px 5px;
-    font-size: 16px;
-
-}
-
-.register-now-form input:focus{
-    border: 1px solid black;
-    background: $light-blue;
+    input {
+      border: 1px solid lightgrey;
+      background: $light-blue;
+      padding: 10px 5px;
+      font-size: 16px;
+    }
+    input:focus{
+      border: 1px solid black;
+      background: $light-blue;
+    }
 }
 
 .grid-two-col{
@@ -452,12 +398,6 @@ footer{
     flex-direction: column; 
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .register-now-address{
     background: #755b86;
     width: 250px;
@@ -466,31 +406,27 @@ footer{
     text-align: left;
     padding: 20px 15px;
     box-shadow: 2px 2px 4px rgb(88, 87, 87);
-}
-
-.register-now-address span{
-    font-size: 24px;
-    padding: 10px 0;
-    text-transform: uppercase;
-}
-
-.register-now-address p{
-    margin: 0;
+    span{
+      font-size: 24px;
+      padding: 10px 0;
+      text-transform: uppercase;
+    }
+    p{
+      margin: 0;
+    }
 }
 
 .submit{
     padding-top: 15px;
-}
-
-.submit button{
-    padding: 15px 0;
-    background: #755b86;
-    color: white;
-    text-transform: uppercase;
-}
-
-.submit button:hover{
-    background: hsla(276, 19%, 44%, 0.8);
+    button{
+      padding: 15px 0;
+      background: #755b86;
+      color: white;
+      text-transform: uppercase;
+    }
+    button:hover{
+      background: hsla(276, 19%, 44%, 0.8);
+    }
 }
 
 .chapel{
@@ -509,28 +445,25 @@ footer{
 
     .registry-images{
         flex-direction: column;
-    }
-
-    .registry-images img{
-        padding: 20px;
+        img{
+          padding: 20px;
+        }
     }
 
     .footer-end{
        flex-direction: column;
-    }
-
-    .footer-end p{
-        font-size: 12px;
-        text-align: center;
+       p{
+         font-size: 12px;
+         text-align: center;
+       }
     }
 
     .footer-social{
         display: flex;
         justify-content: space-between;
-    }
-
-    .footer-social a{
-        padding-left: 0px;
+        a{
+          padding-left: 0px;
+        }
     }
 
    .story-col{
@@ -558,18 +491,6 @@ footer{
 }
 
 @media(max-width: 750px){
-     .content{
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .left{
-        width: 100%;
-    }
-
-    .right{
-        width: 100%;
-    }
 
     .bridesmaids-container,
     .groomsmen-container{
